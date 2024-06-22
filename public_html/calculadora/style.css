@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Añadido para centrar verticalmente */
+    height: 100vh;
+    margin: 0;
+    background-color: #202020;
+}
+
+.calculator {
+    padding: 20px;
+    background-color: #202020;
+    border-radius: 12px;
+    box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.5);  
+}
+
+.result {
+    height: 50px;
+    background-color: #A7AF7C;
+    border-radius: 7px;    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.numbers {
+ margin-top: 20px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+ width: 290px;
+ position: relative;
+}
+
+/*botones chicos*/
+.value-button {
+    width: 65px;
+    height: 60px;
+    position: relative;
+    margin: 0;
+    background-color: #494949;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid #21252910;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); /* Sombra para el texto */
+    color: white;
+    border: 1px solid #14171A;
+}
+
+/*botones chicos*/
+.value-button::before { 
+    content: "";
+    width: 50px;
+    height: 45px;
+    background: linear-gradient(to right, rgba(53, 53, 53, 6), rgba(255,255,255,0.3));
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    border: 1px solid  rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    margin: auto;
+}
+
+.value-button:first-child {
+   width: 140px; /* Ancho de cada tecla */
+   height: 60px; /* Altura de cada tecla */
+   background-color: #C20000;
+   color: white;
+   text-align: center;
+   line-height: 60px; /* Centra el texto verticalmente */
+   border-radius: 8px;
+   cursor: pointer;
+   box-shadow: 0 14px 18px rgba(0, 0, 0, 0.3); /* Sombra para simular relieve */
+   border: 1px solid #14171A;
+}
+
+.value-button:first-child::before {
+    content: "";
+    width: 110px;
+    height: 45px;
+    background: linear-gradient(to right, rgba(214, 5, 5, 0.7), rgba(255,255,255,0.4));
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    border: 1px solid  rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    margin: auto;
+}
+
+
+.value-button:nth-last-child(1) {
+    width: 140px;
+}
+
+
+.value-button:nth-last-child(1)::before {
+    width: 103px; /* Ancho de cada tecla */
+  
+}
